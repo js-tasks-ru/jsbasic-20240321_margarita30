@@ -1,10 +1,4 @@
 function namify(users) {
-  let userNames = [];
-
-  for (let user of users) {
-    if (user.hasOwnProperty("name")) {
-      userNames.push(user.name);
-    }
-  }
+  userNames = users.map((user) => user.name);
   return userNames;
 }
