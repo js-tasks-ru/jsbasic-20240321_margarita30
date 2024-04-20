@@ -14,6 +14,7 @@
  */
 export default class UserTable {
   constructor(rows) {
+
     this.rows = rows;
     this.elem = this.generateTable();
   }
@@ -62,5 +63,6 @@ export default class UserTable {
 
   deleteRow(row) {
     row.remove();
+
   }
 }

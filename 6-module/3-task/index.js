@@ -1,8 +1,11 @@
-import createElement from "../../assets/lib/create-element.js";
+
+import createElement from '../../assets/lib/create-element.js';
+
 
 export default class Carousel {
   constructor(slides) {
     this.slides = slides;
+
     this.render();
     this.currentSlideIndex = 0;
     this.elem.addEventListener("click", this.onButtonClick.bind(this));
@@ -96,5 +99,6 @@ export default class Carousel {
 
   get elem() {
     return this._elem;
+
   }
 }

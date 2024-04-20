@@ -1,5 +1,6 @@
 export default class ProductCard {
   constructor(product) {
+
     this.product = product;
     this.render();
     this.elem.addEventListener("click", this.onButtonClick.bind(this));
@@ -32,3 +33,6 @@ export default class ProductCard {
     );
   }
 }
+  }
+}
+
